@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-  NativeRouter,
+  NativeRouter as Router,
   Route
 } from 'react-router-native';
 
 import Home from '../layouts/Home';
 
 const routes = () => (
-  <NativeRouter>
+  <Router>
     <Route exact path="/" component={Home} />
-  </NativeRouter>
+  </Router>
 );
 
 export default routes;
